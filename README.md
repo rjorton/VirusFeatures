@@ -8,9 +8,9 @@ The CPB_Machine program will create a file called InputSequenceFile_dat.txt with
 
 The input sequence file can have numerous sequences in it, but the program expects sequences to be in FASTA single line format (i.e. one header line followed by one sequence line), sequences must be in frame coding sequences as the program is calculating codon and AA frequencies.
 
-lcl|NC_001437.1_cds_NP_059434.1_1 description
-ATGACTAAAAAACCAGGAGGGCCCGGTAAAAACCGGGCTATCAATATG...
-lcl|NC_001437.1_cds_YP_006355435.1_2 description
-ATGACTAAAAAACCAGGAGGGCCCGGTAAAAACCGGGCTATCAATATG...
+The program currently looks for Genbank style headers in order to link coding sequences from the same viral genome/segment together, taking the above example it takes the substring from character number 5 to the start of the _cds_ to identify the genbank accession number. Sequences from the same accession are analysed (and outputted) together:
 
-The program currently looks for Genbank style headers in order to link coding sequences from the same viral genome/segment together, taking the above example it takes the substring from character number 5 to the start of the _cds_ to identify the genbank accession number. Sequences from the same accession are analysed (and outputted) together
+lcl|NC_001437.1_cds_NP_059434.1_1 description
+
+lcl|NC_001437.1_cds_YP_006355435.1_2 description
+
