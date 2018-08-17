@@ -14,3 +14,4 @@ lcl|NC_001437.1_cds_NP_059434.1_1 description
 
 lcl|NC_001437.1_cds_YP_006355435.1_2 description
 
+An example input sequence file (picrona_new.fasta) and example program output file (picorna_new_dat.txt) are provided.
