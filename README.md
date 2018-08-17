@@ -1,10 +1,10 @@
-Program to create various features from viral coding sequences, raning from nucleotide, dinucleotide and aa frequencies, to dinucleotide, codon and codon pair biases.
+Program to create various features from viral coding sequences, ranging from nucleotide, dinucleotide and AA frequencies, to dinucleotide, codon and codon pair biases.
 
 This is a java program that is run as:
 
 java -jar CPB_Machine.jar InputSequenceFile.fasta
 
-The CPB_Machine program will create a file called InoutSequenceFile_dat.txt with all the features in it.
+The CPB_Machine program will create a file called InputSequenceFile_dat.txt with all the features in it.
 
 The program expects sequences to be in FASTA single line format (i.e. one header line followed by one sequence line), sequences must be in frame coding sequences as the program is calculating codon and AA frequencies.
 
