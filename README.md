@@ -6,7 +6,7 @@ java -jar CPB_Machine.jar InputSequenceFile.fasta
 
 The CPB_Machine program will create a file called InputSequenceFile_dat.txt with all the features in it.
 
-The program expects sequences to be in FASTA single line format (i.e. one header line followed by one sequence line), sequences must be in frame coding sequences as the program is calculating codon and AA frequencies.
+The input sequence file can have numerous sequences in it, but the program expects sequences to be in FASTA single line format (i.e. one header line followed by one sequence line), sequences must be in frame coding sequences as the program is calculating codon and AA frequencies.
 
 >lcl|NC_001437.1_cds_NP_059434.1_1 [description]
 ATGACTAAAAAACCAGGAGGGCCCGGTAAAAACCGGGCTATCAATATG...
