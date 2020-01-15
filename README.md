@@ -16,7 +16,7 @@ The VirusAccesions.txt file was just used to add a virus name and taxID to the o
 
 The input sequence file can have numerous sequences in it, but the program expects sequences to be in FASTA single line format (i.e. one header line followed by one sequence line), there should be no blank lines, sequences must be in frame coding sequences as the program is calculating codon and AA frequencies. It will throw an error if sequences are not a multiple of 3.
 
-The VirusAccesions.txt has a list of virus accesion numbers, taxID, and Species names, if your accession is not present in the file, a '?' symbol should be outputted in the virus name column.
+The VirusAccesions.txt has a list of virus accesion numbers, taxID, and Species names, if your accession is not present in the file, a '?' symbol should be outputted in the TaxID and Species column.
 
 The program currently looks for Genbank style headers in order to link coding sequences from the same viral genome together, taking the below example it takes the substring from character number 5 (after the pipe | symbol) to the start of the _cds_ to identify the genbank accession number. Sequences from the same accession are analysed (and outputted) together:
 
