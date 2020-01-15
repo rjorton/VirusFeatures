@@ -1,8 +1,10 @@
 ### VirusFeatures
 
+This is in the process of being replaces by [SeqFeats](https://github.com/rjorton/SeqFeats) in python.
+
 Program to create various features from viral coding sequences, ranging from nucleotide, dinucleotide and AA frequencies, to dinucleotide, codon and codon pair biases.
 
-This is a java program that is run as. 
+This is a java program that is run as:
 
 ---
     java -jar CPB_Machine.jar InputSequenceFile.fasta
