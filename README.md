@@ -26,7 +26,7 @@ The program currently looks for Genbank style headers in order to link coding se
     lcl|NC_001437.1_cds_YP_006355435.1_2 description
 ---
 
-If an lcl| and _cds_ are not present in the header, it will use the whole sequence header. An example input sequence file (picrona_new.fasta) and example program output file (picorna_new_dat.txt) are provided.
+If an ">lcl|" and "\_cds\_" are not present in the header, it will use the whole sequence header. An example input sequence file (picrona_new.fasta) and example program output file (picorna_new_dat.txt) are provided.
 
 Fields outputted:
 
