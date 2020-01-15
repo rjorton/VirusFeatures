@@ -1,6 +1,6 @@
 ### VirusFeatures
 
-This is in the process of being replaces by [SeqFeats](https://github.com/rjorton/SeqFeats) in python.
+This is in the process of being replaced by [SeqFeats](https://github.com/rjorton/SeqFeats) in python.
 
 Program to create various features from viral coding sequences, ranging from nucleotide, dinucleotide and AA frequencies, to dinucleotide, codon and codon pair biases.
 
