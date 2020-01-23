@@ -26,7 +26,14 @@ The program currently looks for Genbank style headers in order to link coding se
     >lcl|NC_001437.1_cds_YP_006355435.1_2 description
 ---
 
-If an ">lcl|" and "\_cds\_" are not present in the header, it will use the whole sequence header. An example input sequence file (picrona_new.fasta) and example program output file (picorna_new_dat.txt) are provided.
+If an ">lcl|" and "\_cds\_" are not present in the header, it will:
+
+1. Extract the text between ">lcl|" and "\_cds\_" as the viral genome identifier
+2. If 1 not present, extract the text between ">lcl|" and "\_gene\_" as the viral genome identifier
+3. If 2 not present, extract the text between ">" and the first space " " as the viral genome identifier
+4. If 3 not present, it will use the whole sequence header as the viral genome identifier
+
+An example input sequence file (picrona_new.fasta) and example program output file (picorna_new_dat.txt) are provided.
 
 Fields outputted:
 
