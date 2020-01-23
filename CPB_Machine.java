@@ -188,7 +188,7 @@ public class CPB_Machine {
                             
                             //added this in so will run on any seq without throwing error 
                             //as opposed to seqs only with >lcl| and _cds_
-                            int from=0;
+                            int from=1;
                             int to=line.length();
                             
                             //Seqs are in form >lcl|GenomeAccession_cds_blahblah
@@ -196,6 +196,15 @@ public class CPB_Machine {
                             if(line.indexOf(">lcl|")==0 & line.indexOf("_cds_")>0) {
                                 from=5;
                                 to=line.indexOf("_cds_");
+                            }
+                            else if(line.indexOf(">lcl|")==0 & line.indexOf("_gene_")>0) {
+                                from=5;
+                                to=line.indexOf("_gene_");
+                            }
+                            //greater than 1 incase space is first after >
+                            else if(line.indexOf(" ")>1) {
+                                from=1;
+                                to=line.indexOf(" ");
                             }
                             /*
                             //used for separate processing
