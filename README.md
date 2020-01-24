@@ -18,7 +18,7 @@ The input sequence file can have numerous sequences in it, but the program expec
 
 The VirusAccesions.txt has a list of virus accesion numbers, taxID, and Species names, if your accession is not present in the file, a '?' symbol should be outputted in the TaxID and Species column.
 
-The program currently looks for Genbank style headers in order to link coding sequences from the same viral genome together, taking the below example it takes the substring from character number 5 (after the pipe | symbol) to the start of the _cds_ to identify the genbank accession number. Sequences from the same accession are analysed (and outputted) together, but must be next to each other in the input file as the sequences are read line by line:
+The program currently looks for Genbank style headers in order to link coding sequences from the same viral genome together, taking the below example it takes the substring from character number 5 (after the pipe | symbol) to the start of the \_cds\_ to identify the genbank accession number. Sequences from the same accession are analysed (and outputted) together, but must be next to each other in the input file as the sequences are read line by line:
 
 ---
     >lcl|NC_001437.1_cds_NP_059434.1_1 description
@@ -26,7 +26,7 @@ The program currently looks for Genbank style headers in order to link coding se
     >lcl|NC_001437.1_cds_YP_006355435.1_2 description
 ---
 
-If an ">lcl|" and "\_cds\_" are not present in the header, it will:
+If an ">lcl|" and "\_cds\_" are not present in the header, it will follow the following rules to use a virus identifier:
 
 1. Extract the text between ">lcl|" and "\_cds\_" as the viral genome identifier
 2. If 1 not present, extract the text between ">lcl|" and "\_gene\_" as the viral genome identifier
